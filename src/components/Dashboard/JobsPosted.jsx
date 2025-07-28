@@ -28,9 +28,9 @@ const JobsPosted = () => {
           </div>
         </div>
       </div>
-      <Job />
-      <Job />
-      <Job />
+      <Job jobPosition={"Sr. UI/UX Designer"} />
+      <Job jobPosition={"Sr. UI/UX Designer"} />
+      <Job jobPosition={"Lean Python Developer"} />
     </div>
   );
 };
