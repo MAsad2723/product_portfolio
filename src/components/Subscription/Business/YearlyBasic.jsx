@@ -16,7 +16,7 @@ const YearlyBasic = () => {
     <>
       <div className="flex w-full flex-col gap-3">
         {/* Header */}
-        <div className="flex flex-col gap-4 pb-4 px-6 border-b border-white">
+        <div className="flex flex-col gap-4 py-4 rounded-t-2xl stickyHeader px-6 border-b border-white">
           <div className="flex justify-between">
             <div className="text-2xl font-medium">Business</div>
             <div className="flex gap-2 items-center">
