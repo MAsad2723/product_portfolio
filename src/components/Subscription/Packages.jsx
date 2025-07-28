@@ -17,7 +17,10 @@ const Packages = () => {
         </div>
         <div
           className="flex justify-center items-center gap-1 ps-3 rounded-full h-[40px] cursor-pointer "
-          onClick={() => setActiveSubscription("monthly")}
+          onClick={() => {
+            setActiveSubscription("monthly");
+            setActivePackage("basic");
+          }}
           style={{
             border: `1px solid ${
               activeSubscription === "monthly" ? "" : "#DEE0E3"
@@ -38,6 +41,7 @@ const Packages = () => {
             className="flex justify-center items-center gap-2 px-3 rounded-full h-[40px] w-max cursor-pointer "
             onClick={(e) => {
               setActiveSubscription("yearly");
+              setActivePackage("basic");
               e.stopPropagation();
             }}
             style={{
