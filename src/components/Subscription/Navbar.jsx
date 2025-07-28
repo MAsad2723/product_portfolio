@@ -60,6 +60,7 @@ const Navbar = () => {
         {Links("/about", "About")}
         {Links("/packages", "Packages")}
         {Links("/contact", "Contact Us")}
+        {Links("/dashboard", "Dashboard")}
       </div>
       <div
         className="flex justify-center items-center gap-1 px-3 rounded-full h-[40px] "
