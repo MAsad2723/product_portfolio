@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Check, Cross, Minus, Plus } from "../../SVG";
+import { Check, Minus, Plus } from "../../SVG";
 
 const MarketingTools = ({
   heading,

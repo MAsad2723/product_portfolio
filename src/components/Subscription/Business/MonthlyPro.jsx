@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import NormalPackage from "../Packages/NormalPackage";
 import MarketingTools from "../Packages/MarketingTools";
 import { RightArrow } from "../../SVG";
@@ -6,6 +6,11 @@ import useMonthlyProPrice from "../StateStore/BusinessMonthlyProPrice";
 
 const MonthlyPro = () => {
   const { price, setPrice } = useMonthlyProPrice();
+  useEffect(() => {
+    return () => {
+      setPrice(55000);
+    };
+  }, []);
   return (
     <>
       <div className="flex w-full flex-col gap-3">
