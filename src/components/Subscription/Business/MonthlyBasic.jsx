@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import NormalPackage from "../Packages/NormalPackage";
 import MarketingTools from "../Packages/MarketingTools";
 import { RightArrow } from "../../SVG";
-import useMonthlyBasicPrice from "../StateStore/BusinessMonthlyBasicPrice";
+import useMonthlyBasic from "../StateStore/BusinessMonthlyBasic";
 
 const MonthlyBasic = () => {
-  const { price, setPrice } = useMonthlyBasicPrice();
+  const { price, setPrice } = useMonthlyBasic();
   useEffect(() => {
     return () => {
       setPrice(35000);

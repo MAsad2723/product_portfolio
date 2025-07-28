@@ -1,8 +1,8 @@
 import { create } from "zustand";
 
-const useMonthlyBasicPrice = create((set) => ({
+const useMonthlyBasic = create((set) => ({
   price: 35000,
   setPrice: (num) => set({ price: num }),
 }));
 
-export default useMonthlyBasicPrice;
+export default useMonthlyBasic;
