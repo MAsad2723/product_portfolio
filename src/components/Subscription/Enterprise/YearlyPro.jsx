@@ -3,6 +3,7 @@ import NormalPackage from "../Packages/NormalPackage";
 import { RightArrow } from "../../SVG";
 import useYearlyPro from "../StateStore/EnterpriseYearlyPro";
 import AllMarketingTools from "../Packages/AllMarketingTools";
+
 const YearlyPro = () => {
   const { price, setPrice } = useYearlyPro();
   useEffect(() => {
