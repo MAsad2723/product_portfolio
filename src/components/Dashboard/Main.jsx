@@ -20,6 +20,7 @@ import {
   LineChart,
   lineElementClasses,
 } from "@mui/x-charts";
+import StackedBarToggle from "./StackedBarToggle";
 
 ChartJS.register(
   CategoryScale,
@@ -267,12 +268,13 @@ export default function Main() {
         <div className="text-lg font-semibold mb-4">
           Statistics of active applications
         </div>
-        <BarChart
+        {/* <BarChart
           labels={data.statsLabels}
           apps={data.statsApplied}
           shortlists={data.statsShortlisted}
           rejections={data.statsRejected}
-        />
+        /> */}
+        <StackedBarToggle />
       </div>
       <div className="bg-white rounded-xl shadow p-6">
         <div className="text-lg font-semibold mb-4">
